@@ -3,3 +3,107 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-family: "Space Mono", monospace;
+  color: #444;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  /* background-color: red; */
+}
+
+h1 {
+  font-size: 52px;
+  margin-bottom: 32px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+
+/* ************ */
+/* hero section */
+/* ************ */
+
+header {
+  /* background-color: orange; */
+  /* Gia na pianei oli tin othoni */
+  height: 100vh;
+  position: relative;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../pics/hero.jpg);
+  background-size: cover;
+  color: #fff;
+}
+
+/* h1 {
+  margin-bottom: 32px;
+} */
+
+.header-container {
+  width: 1200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  /* in relation to element size */
+  transform: translate(-50%, -50%);
+  /* background-color: violet; */
+}
+
+.header-container-inner {
+  /* analogika me parent */
+  width: 50%;
+  /* background-color: blue; */
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: yellow;
+  color: black;
+  text-decoration: none;
+
+  /* Gia na doulepsei to padding prepei na einai inline */
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 9px;
+}
+
+h2 {
+  font-size: 44px;
+  margin-bottom: 48px;
+}
+
+/* ********** */
+/* Navigation */
+/* ********** */
+
+.nav-cont {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 3.2rem;
+}
+
+.logo {
+  display: block;
+  height: 64px;
+  margin-bottom: 3.2rem;
+}
+
+nav {
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+}
