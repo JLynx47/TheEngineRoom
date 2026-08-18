@@ -63,6 +63,48 @@ body {
   height: 2.4rem;
 }
 
+/* *********** */
+/* NAVIGATION */
+/* ********** */
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  /* to inline block gia na douleyei to paddingh */
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-active {
+  color: white;
+}
+
+/* vazoume to main nav link oste na megalose to specificity kai na eimaste sigouroi oti tha kanei apply to style */
+/* Epeidi iparxei kai allo class me xroma, mporei na iparskei conflict */
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #2d6c7b;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #17363e;
+}
+
 /* **** */
 /* HERO */
 /* **** */
