@@ -1,0 +1,94 @@
+/* colors
+primary: #2d6c7b
+secondary:
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Space Mono", monospace;
+  color: #444;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+/* **** */
+/* HERO */
+/* **** */
+
+/* to parakato mpainei gia na mporesei to background color na einai se oli tin othoni */
+.section-hero {
+  background-color: #abc4ca;
+  padding: 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.hero-img {
+  max-width: 100%;
+}
+
+/* Reusables */
+.btn:link,
+.btn:visited {
+  /* to inline-block mpainei gia na mporei na leitourgei to padding */
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  transition: background-color 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #2d6c7b;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #17363e;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+}
+
+.btn--outline:hover,
+.btn-outline:active {
+  background-color: #fdf2e9;
+  box-shadow: inset 0 0 0 0px #fff;
+}
+
+.margin-right-sm {
+  /* to important sigoureuei oti oti kai na simvei to margin tha ginei . Exei to highest priority*/
+  margin-right: 1.6rem !important;
+}
