@@ -173,6 +173,35 @@ body {
 }
 
 /* ******** */
+/* PARTNERS */
+/* ******** */
+
+.section-partners {
+  padding: 3.2rem 0;
+}
+
+.heading-partners {
+  color: #999;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos img {
+  /* gia na kanoume monoxroma ta logos */
+  filter: grayscale(1);
+  height: 4rem;
+}
+
+/* ******** */
 /* Services */
 /* ******** */
 .section-services {
