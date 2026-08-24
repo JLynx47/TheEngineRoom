@@ -1,0 +1,79 @@
+.section-shop {
+  background-color: #abc4ca;
+  padding: 9.6rem 0;
+  min-height: 100vh;
+}
+
+/* i karta tou kathe autokinitou */
+.shop {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  /* background-color: rgba(255, 255, 255, 0.596); */
+  /* xoris to overflow, oi pano gonies einai tetragones logo tis photogrtafiAs */
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.shop:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.06);
+}
+
+.shop-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.tag {
+  /* gia padding */
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 100px;
+  margin-bottom: 1.2rem;
+}
+
+.tag--chrysler {
+  background-color: #c7ced1;
+}
+
+.tag--ford {
+  background-color: #48c3fc;
+}
+
+.tag--jaguar {
+  background-color: #fc4848a8;
+}
+
+.shop-img {
+  width: 100%;
+}
+
+.shop-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.shop-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.shop-attribute {
+  font-size: 1.8rem;
+  /* vazoume display flex gia na morfopoiisoume to icon kai to text */
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.shop-icon {
+  font-size: 2.4rem;
+  /* color: yellow; */
+}
