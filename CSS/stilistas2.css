@@ -231,6 +231,14 @@ body {
   line-height: 1.8;
 }
 
+/* ***** */
+/* Shop */
+/* **** */
+
+.shop--background {
+  background-color: white !important;
+}
+
 /* ********** */
 /* Reusables */
 /* ********* */
@@ -310,6 +318,7 @@ strong {
 
 .link:link,
 .link:visited {
+  font-size: 1.8rem;
   display: inline;
   color: #2d6c7b;
   text-decoration: none;
@@ -333,6 +342,10 @@ strong {
 
 .margin-bottom-md {
   margin-bottom: 4.8rem !important;
+}
+
+.margin-top-sm {
+  margin-top: 1.6rem !important;
 }
 
 .center-text {
