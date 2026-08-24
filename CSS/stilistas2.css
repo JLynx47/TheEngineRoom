@@ -244,13 +244,25 @@ body {
 /* ************ */
 
 .section-testimonials {
-  padding: 9.6rem 0;
+  background-color: #abc4ca;
+  display: grid;
+  /* den xrisimopoioume idia noumera, gia na einai to gallery mikrotero */
+  grid-template-columns: 55fr 45fr;
+  /* an den kanoume align items, ta antikeimena tou gallery exoun periergo
+  spacing */
+  align-items: center;
 }
 /* xrisimopoioume allo grid, gia na ftiaksoume mikrotero gap apo ta alla */
+
+.testimonial-container {
+  padding: 9.6rem;
+}
+
 .testimonials {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4.8rem;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
 }
 
 .testimonial-img {
@@ -268,6 +280,34 @@ body {
 .testimonial-name {
   font-size: 1.6rem;
   color: #777;
+}
+
+/* ******* */
+/* Gallery */
+/* ******* */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item img {
+  /* by default oi images einai inline lements. Gia ayto kai iparxei ena mikro keno. An tis kanoume block, 
+  eksafanizetai to keno metaksi tous */
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+/* gia na min kanei overflow to parakato effect */
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
 }
 
 /* ********** */
