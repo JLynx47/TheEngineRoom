@@ -310,12 +310,51 @@ body {
   transform: scale(1.1);
 }
 
+/* ******** */
+/* Pricing */
+/* ******* */
+
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.pricing-plan {
+  border-radius: 11px;
+  width: 75%;
+}
+
+.plan-name {
+  color: #2d6c7b;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+/* to xrisimopoioume gia na metaferoume mono tin aristeri karta */
+.pricing-plan--common {
+  justify-self: end;
+  border: 2px solid #f8ef9f;
+  padding: 4.6rem;
+}
+
+.pricing-plan--special {
+  background-color: #f8ef9f;
+  padding: 4.8rem;
+}
+
 /* ********** */
 /* Reusables */
 /* ********* */
 
 strong {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .heading-primary,
@@ -436,6 +475,10 @@ strong {
   gap: 9.6rem;
 }
 
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -451,4 +494,18 @@ strong {
 /* Extra class gia na kanoume align opote theloume emeis */
 .grid--center-v {
   align-items: center;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
 }
