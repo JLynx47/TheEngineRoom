@@ -379,6 +379,87 @@ body {
   line-height: 1.8;
 }
 
+/* *********** */
+/* CTA SECTION */
+/* *********** */
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #abc4ca; */
+  border-radius: 11px;
+  background-image: linear-gradient(to right bottom, #abc4ca, #2d6c7b);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  /* height: 50rem; */
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #0d1e22;
+}
+
+.cta .heading-secondary {
+  color: #0d1e22;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.cta-img-box {
+  background-image:
+    linear-gradient(
+      to right bottom,
+      rgba(171, 196, 202, 0.35),
+      rgba(45, 107, 123, 0.35)
+    ),
+    url("../pics/cta.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  /* xoris to parakato den kanei inherit to font family */
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #dde7ea;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #999;
+}
+
+.cta-form button {
+}
+
 /* ********** */
 /* Reusables */
 /* ********* */
@@ -423,6 +504,7 @@ strong {
   margin-bottom: 3.2rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   /* to inline-block mpainei gia na mporei na leitourgei to padding */
@@ -432,6 +514,11 @@ strong {
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   transition: all 0.3s;
+
+  /* only necessary for the plain .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .btn--full:link,
@@ -454,6 +541,17 @@ strong {
 .btn-outline:active {
   background-color: #fdf2e9;
   box-shadow: inset 0 0 0 0px #fff;
+}
+
+.btn--form {
+  background-color: #2d6c7b;
+  color: #dde7ea;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #17363e;
 }
 
 .link:link,
@@ -538,4 +636,10 @@ strong {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+}
+
+/* Vgazoume to default focus point */
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(221, 231, 234, 0.521);
 }

@@ -534,6 +534,74 @@
           </div>
         </div>
       </section>
+
+      <section class="section-cta">
+        <div class="container">
+          <!-- to cta to vazoume ekei kai oxi mesa sto container opos kanoume sta alla grids, gia na apofigoume
+           to padding tou container -->
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Contact us</h2>
+              <p class="cta-text">Fill the form and we will contact you!</p>
+
+              <form class="cta-form">
+                <div>
+                  <label for="full name">Full Name</label>
+                  <input
+                    type="text"
+                    placeholder="Dagger the Great"
+                    id="full name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">E-mail</label>
+                  <input type="email" placeholder="Dagla@GTT.com" id="email" />
+                </div>
+                <div>
+                  <label for="telephone">Telphone</label>
+                  <input
+                    type="telephone"
+                    placeholder="69696969"
+                    id="telephone"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="service">Service</label>
+                  <select id="service">
+                    <option value="">Please choose one option</option>
+                    <option value="engine-repair">Engine repair</option>
+                    <option valye="body-repair">Body repair</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="date">Date</label>
+                  <input
+                    type="date"
+                    placeholder="1/4/2026"
+                    id="date"
+                    value="no-date"
+                  />
+                </div>
+                <div>
+                  <label for="time">Time</label>
+                  <input type="time" placeholder="11:00" id="time" />
+                </div>
+                <button class="btn btn--form">Send</button>
+              </form>
+            </div>
+
+            <!-- to role to vazoume gia na mporoun na to doun ta screen readers. xoris ayto, den fainetai i 
+           eikona se ayta, mias kai to div einai keno -->
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="a woman in front of a crashed car"
+            ></div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script
