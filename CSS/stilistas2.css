@@ -11,6 +11,8 @@ html {
   font-size: 62.5%;
   font-family: "Space Mono", monospace;
   color: #444;
+  /* to parakato mpainei gia na eksafanizetai to menu otan exoume animation kinisis deksia */
+  overflow-x: hidden;
 }
 
 body {
@@ -18,6 +20,8 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  /* to parakato mpainei gia na eksafanizetai to menu otan exoume animation kinisis deksia */
+  overflow-x: hidden;
 }
 
 /* ****** */
@@ -33,6 +37,8 @@ body {
   /* to bazoume orismeno to height gia na ginei sticky argotera */
   height: 9.6rem;
   padding: 0 4.8rem;
+  /* relative se sxesi me to main0nav sta queries. Mono kai mono gia to animation */
+  position: relative;
 }
 
 .logo {
@@ -80,6 +86,24 @@ body {
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
   background-color: #17363e;
+}
+
+/* Mobile */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  font-size: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /* **** */
