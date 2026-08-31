@@ -46,7 +46,7 @@
   }
 }
 
-/* Bellow 100px */
+/* Bellow 1000px */
 @media (max-width: 63rem) {
   html {
     font-size: 50%;
@@ -146,5 +146,36 @@
   .main-nav-link:link,
   .main-nav-link:visited {
     font-size: 3rem;
+  }
+}
+
+/* bellow 660px */
+@media (max-width: 42rem) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .jag {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 50%;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
   }
 }
