@@ -13,6 +13,7 @@ html {
   color: #444;
   /* to parakato mpainei gia na eksafanizetai to menu otan exoume animation kinisis deksia */
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
