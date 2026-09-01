@@ -96,7 +96,12 @@
 
   .main-nav {
     /* background-color: rgba(255, 255, 255, 0.97); */
-    background-color: rgba(171, 196, 202, 0.97);
+    background-color: rgba(171, 196, 202, 0.6);
+    /* kanei blur oti brisketai piso apo to element */
+    backdrop-filter: blur(10px);
+    /* gia palia ekdosi tou safari pou den ipostirizetai */
+    -webkit-backdrop-filter: blur(10px);
+
     position: absolute;
     top: 0;
     left: 0;
